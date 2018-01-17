@@ -10,6 +10,7 @@
 
 	.about-me {
 		height: auto;
+
 	}
 
 	.about-me img {
@@ -50,10 +51,6 @@
 
 
 @media only screen and (max-width: 768px) {
-
-	[class*="col-"] {
-        width: 100%;
-    }
 
     body {
     	height: 1150px;
@@ -137,10 +134,6 @@
 		text-align: center;
 	}
 
-	/*[class*="col-"] {*/
-        /*width: 100%;*/
-    /*}*/
-
     .port {
     	margin: 25px;
     }
@@ -151,7 +144,4 @@
 		margin: 15px 5% 20px 5%;
 	}
 
-    .contact-with-me {
-    	margin: 25px;
-    }
 }
