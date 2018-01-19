@@ -4,35 +4,31 @@
 <head>
       <meta charset="UTF-8">
    <!-- Linking CSS -->
-      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <title> My Bio page </title>
 </head>
 
 <body>
 
+<div class="wrapper">
+
   <!-- A fixed header contains name and page tags -->
-    <header class="header" >
-    <div class="name">Tung Tung Ouyang</div>
-    <div class="header-tab"></div>
-     <div class="tabs">
-       <ul>  
-         <li><a href="index.html" style="text-decoration:none">About |</a></li>
-         <li><a href="portfolio.html" style="text-decoration:none"> Portfolio |</a></li>
-         <li><a href="contact.html" style="text-decoration:none"> Contact</a></li>
-       </ul>
-     </div>
-    </header>
+  <header id="head-tab">
+    <div class="container">
+      <a href="index.html" id="name">Tung Tung Ouyang</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
     <!-- A section that contains entire contents -->
-    <div class="entire">
-
-      <div class="section about-me">
-      <h2>About Me</h2>
-      <hr> 
-
-        <img id="bio-image" src="http://4.bp.blogspot.com/-cT9bfj5o3kw/VKa3UGTjC_I/AAAAAAAAA_4/Jk9Sb-8NnaA/s1600/cat%2Bwith%2Bglasses%2Bprofile%2Bpic.jpg" alt="Ouyang">
+    <main  class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
+      <img src="assets/images/cat.png" class="bio-image" alt="Ouyang">
 
         <p>Nulla tempor ornare diam, vitae volutpat erat bibendum eget. Nunc sagittis placerat velit sit amet interdum. Nam in iaculis purus, quis tristique velit. Cras ut nisl vitae orci malesuada placerat non sed magna. Nulla ultrices, dolor at aliquam volutpat,
         lorem magna pharetra arcu, eget feugiat nisi libero at nunc. Phasellus finibus elit at sapien vehicula varius. Maecenas in dapibus leo. Aliquam molestie vulputate metus. Morbi sed posuere quam, et sodales felis. Proin augue nulla, pellentesque
@@ -41,32 +37,40 @@
         <p>Nullam imperdiet vehicula dolor eu consectetur. Vestibulum pulvinar lobortis accumsan. Phasellus lobortis pulvinar augue, eu ultrices dui. Donec ut est erat. In facilisis tellus nibh, eu consequat diam commodo a. Nam egestas sapien nunc, ullamcorper
         semper odio feugiat non. Duis et nisl leo. Aliquam consectetur vestibulum turpis. Vivamus non elit ut lorem mattis iaculis. Suspendisse ullamcorper ante orci, et condimentum nisi pharetra id. Praesent ut erat in eros mollis interdum quis ut nisi.
         Etiam ac risus in erat imperdiet sagittis eu sed metus. Etiam molestie ipsum sed vehicula efficitur. Cras eu metus in ex vehicula sodales.</p>
-        <p>Maecenas feugiat, ex quis hendrerit interdum, felis ante laoreet sem, vitae tincidunt diam lectus fringilla dolor. Nunc vitae dui sed ligula pharetra sagittis in nec ante. Sed consequat congue vehicula. Donec vel risus at sapien rhoncus consequat
-        a lobortis lorem. Mauris ut sem massa. Curabitur ac consequat eros. Nulla non nibh eros. Donec porta condimentum nisi a iaculis. Sed sit amet risus at lacus suscipit accumsan sed ullamcorper lorem. Proin sed egestas risus. Sed egestas ex ac finibus
-        ornare.</p>
+        
+      </section>
+
+       <section class="connect-with-me">
+       <div id="connect">
+        <h2>Connect with Me</h2>
+
+   
+        <ul>
+
+        <li> <a href="https://github.com/ouyangtt" style="text-decoration:none" target="_blank"> 
+       <img id="github" class="logo" src="assets/images/git.png" alt="github">
+          </a></li>
+
+        <li> <a href="https://www.linkedin.com/in/tung-tung-ouyang-03764093/" style="text-decoration:none" target="_blank"> 
+       <img id="linkedln" class="logo" src="assets/images/link.png" alt="linkedin">
+          </a></li>
+
+        <li>  <a href="https://stackoverflow.com/users/9129451/tung-tung-ouyang" style="text-decoration:none" target="_blank"> 
+       <img id="stack" class="logo" src="assets/images/stack.png" alt="stack">
+          </a></li>
+        </ul>
+
       </div>
+    </section>
+  </main>
+    <div class="push"></div>
 
-      <div class="section connect-with-me">
-      <h3>Connect with Me</h3>
-      <hr>
-
-        <a href="https://github.com/ouyangtt" target="_blank" style="text-decoration:none"> 
-         <img id="github" src="assets/images/git.png" alt="github">
-        </a>
-
-        <a href="https://www.linkedin.com/in/tung-tung-ouyang-03764093/" target="_blank" style="text-decoration:none"> 
-         <img id="linkedln" src="assets/images/link.png" alt="linkedin">
-        </a>
-
-        <a href="https://stackoverflow.com/users/9129451/tung-tung-ouyang" target="_blank" style="text-decoration:none"> 
-         <img id="stack" src="assets/images/stack.png" alt="stack">
-        </a>
-
-      </div>
+</div>
+  <footer>
+    <div class="container">
+      Copyright &copy; 2018 Tung Tung Ouyang
     </div>
-     <div class="footer">
-      <p>Copyright &copy; 2018 Tung Tung Ouyang</p>
-     </div>
+  </footer>
 </body>
 </html>
 

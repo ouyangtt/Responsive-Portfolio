@@ -4,35 +4,34 @@
 <head>
       <meta charset="UTF-8">
    <!-- Linking CSS -->
-      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title> My Bio page </title>
 </head>
 
 <body>
+  <div class="wrapper">
+
 
   <!-- A fixed header contains name and page tags -->
-    <header class="header" >
-    <div class="name">Tung Tung Ouyang</div>
-    <div class="header-tab"></div>
-     <div class="tabs">
-       <ul>  
-         <li><a href="index.html" style="text-decoration:none">About |</a></li>
-         <li><a href="portfolio.html" style="text-decoration:none"> Portfolio |</a></li>
-         <li><a href="contact.html" style="text-decoration:none"> Contact</a></li>
-       </ul>
-     </div>
-    </header>
+    <header id="head-tab" >
+    	<div class="container">
+       <a href="index.html" id="name">Tung Tung Ouyang</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
 
     <!-- A section that contains entire contents -->
-    <div class="entire">
-
-        <div class="contact">
-        <h2>Contact</h2>
-        <hr> 
+   <main  class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+    
     <!-- Create a form to submit info -->
-      <div class="container">
+      
           <form action="/action_page.php">
                  <label for="fname">Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -46,29 +45,40 @@
 
                 <input type="submit" value="Submit">
           </form>
-      </div>
-        </div>
+     
+        </section>
 
-        <div class="section connect-with-me">
-        <h3>Connect with Me</h3>
-        <hr>
+       <section class="connect-with-me">
+       <div id="connect">
+        <h2>Connect with Me</h2>
+
     <!-- Redirect to other websites for contact info -->
-          <a href="https://github.com/ouyangtt" style="text-decoration:none" target="_blank"> 
-       <img id="github" src="assets/images/git.png" alt="github">
-          </a>
+    <ul>
 
-          <a href="https://www.linkedin.com/in/tung-tung-ouyang-03764093/" style="text-decoration:none" target="_blank"> 
-       <img id="linkedln" src="assets/images/link.png" alt="linkedin">
-          </a>
+        <li> <a href="https://github.com/ouyangtt" style="text-decoration:none" target="_blank"> 
+       <img id="github" class="logo" src="assets/images/git.png" alt="github">
+          </a></li>
 
-          <a href="https://stackoverflow.com/users/9129451/tung-tung-ouyang" style="text-decoration:none" target="_blank"> 
-       <img id="stack" src="assets/images/stack.png" alt="stack">
-          </a>
+        <li> <a href="https://www.linkedin.com/in/tung-tung-ouyang-03764093/" style="text-decoration:none" target="_blank"> 
+       <img id="linkedln" class="logo" src="assets/images/link.png" alt="linkedin">
+          </a></li>
+
+        <li>  <a href="https://stackoverflow.com/users/9129451/tung-tung-ouyang" style="text-decoration:none" target="_blank"> 
+       <img id="stack" class="logo" src="assets/images/stack.png" alt="stack">
+          </a></li>
+    </ul>
 
         </div>
+    </section>
+</main>
+
+  <div class="push"></div>
+
+</div>
+<footer>
+    <div class="container">
+      Copyright &copy; 2018 Tung Tung Ouyang
     </div>
-    <div class="footer">
-     <p>Copyright &copy; 2018 Tung Tung Ouyang</p>
-    </div>
+  </footer>
 </body>
 </html>
